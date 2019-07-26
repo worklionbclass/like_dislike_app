@@ -12,5 +12,8 @@ Rails.application.routes.draw do
   
   get "posts/:post_id/likes" => "likes#create"
   
+  post "posts/:post_id/comments" => "comments#create"
+  delete "comments/:id" => "comments#destroy"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
