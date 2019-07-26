@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   post "posts/:id/update" => "posts#update"
   get "posts/:id/destroy" => "posts#destroy"
   
+  get "posts/:post_id/likes" => "likes#create"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
