@@ -18,13 +18,19 @@ content : <%= @post.content %>
 <% end %>
 
 <h4>좋아요</h4>
-좋아요 갯수 : <%= @post.users.count %>
+좋아요 갯수 : <%= @post.like_users.count %>
 <br>
 
 <a href="/posts/<%= @post.id %>/likes">좋아요</a>
 
 <hr>
+<h4>싫어요</h4>
+싫어요 갯수 : <%= @post.dislike_users.count %>
+<br>
 
+<a href="/posts/<%= @post.id %>/dislikes">좋아요</a>
+
+<hr>
 
 <a href="/posts/index">리스트로 이동</a>
 

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "posts/:id/destroy" => "posts#destroy"
   
   get "posts/:post_id/likes" => "likes#create"
+  get "posts/:post_id/dislikes" => "dislikes#create"
   
   post "posts/:post_id/comments" => "comments#create"
   delete "comments/:id" => "comments#destroy"
